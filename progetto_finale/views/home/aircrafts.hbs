@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aircraft for Sale</title>
+  <link rel="stylesheet" href="../css/aircrafts_style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Aircraft Shop</h1>
+      <nav class="nav">
+        <a href="/hangar" class="nav-link">Hangar</a>
+        <a href="/aircrafts" class="nav-link active">Aircrafts</a>
+        <a href="/contact" class="nav-link">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+  <h2 class="page-title">Explore Our Aircraft Collection</h2>
+  {{#if aircrafts.length}}
+    <div class="grid">
+      {{#each aircrafts}}
+        <div class="card">
+          <img src="/images/aircrafts/{{image_filename}}" alt="{{name}}" class="card-image">
+          <div class="card-body">
+            <h3 class="card-title">{{name}} ({{nickname}})</h3>
+            <p class="card-detail"><strong>Speed:</strong> {{speed}}</p>
+            <p class="card-detail"><strong>Max Altitude:</strong> {{max_altitude}}</p>
+            <p class="card-detail"><strong>Engine Power:</strong> {{engine_power}}</p>
+            <p class="card-price"><strong>Price:</strong> ${{price}}</p>
+            <a href="/aircrafts/{{_id}}" class="btn">View Details</a>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  {{else}}
+    <p class="no-aircrafts">No aircrafts available for sale at the moment.</p>
+  {{/if}}
+</main>
+
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Aircraft Shop. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

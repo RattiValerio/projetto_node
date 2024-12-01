@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Restaurants Orders Management</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base href="<?php echo URL ?>">
+        <link href="{{window.location.href}}css/restricted_access_style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="content flex-stack">
+            <div class="noentry">
+                <div class="ban"></div>
+                <div class="messagebox">
+                    <h2>RESTRICTED ACCESS</h2>
+                    <p>This page is meant to only be accessed by certain people.</p>
+                    <div class="buttoncontainer">
+                        <!--<?php if(!isset($_SESSION['userData']['id'])): ?>
+                            <div class="button" onclick="location.href='<?php echo URL ?>guest'">
+                                Go Back Home
+                            </div>
+                        <?php else: ?>
+                                <?php if($_SESSION['userData']['admin']): ?>
+                                <div class="button" onclick="location.href='<?php echo URL ?>admin'">
+                                    Go Back Home
+                                </div>
+                                <?php else: ?>
+                                <div class="button" onclick="location.href='<?php echo URL ?>manager'">
+                                    Go Back Home
+                                </div>
+                                <?php endif; ?>
+                        <?php endif; ?>-->
+                        <div class="button" onclick="location.href='/login'">
+                            Go Back Home
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cursor"></div>
+    </body>
+</html>

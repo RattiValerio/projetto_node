@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Aircraft: {{aircraft.name}}</title>
+</head>
+<body>
+  <h1>Edit Aircraft: {{aircraft.name}}</h1>
+  <form action="/admin/edit-aircraft/{{aircraft._id}}" method="POST">
+    <label>Name: <input type="text" name="name" value="{{aircraft.name}}" required></label><br>
+    <label>Nickname: <input type="text" name="nickname" value="{{aircraft.nickname}}" required></label><br>
+    <label>Speed: <input type="text" name="speed" value="{{aircraft.speed}}"></label><br>
+    <label>Max Altitude: <input type="text" name="max_altitude" value="{{aircraft.max_altitude}}"></label><br>
+    <label>Engine Power: <input type="text" name="engine_power" value="{{aircraft.engine_power}}"></label><br>
+    <label>Wing Design: <input type="text" name="wing_design" value="{{aircraft.wing_design}}"></label><br>
+    <label>Payload: <input type="text" name="payload" value="{{aircraft.payload}}"></label><br>
+    <label>Price: <input type="number" name="price" value="{{aircraft.price}}"></label><br>
+    <label>Armament (comma-separated): <input type="text" name="armament" value="{{#join aircraft.armament ','}}{{/join}}"></label><br>
+    <label>Defense Systems (comma-separated): <input type="text" name="defense_systems" value="{{#join aircraft.defense_systems ','}}{{/join}}"></label><br>
+    <label>Crew: <input type="text" name="crew" value="{{aircraft.crew}}"></label><br>
+    <label>Fuel Capacity: <input type="text" name="fuel_capacity" value="{{aircraft.fuel_capacity}}"></label><br>
+    <label>Carrier Capable: <input type="checkbox" name="carrier_capable" {{#if aircraft.carrier_capable}}checked{{/if}}></label><br>
+    <label>Image Filename: <input type="text" name="image_filename" value="{{aircraft.image_filename}}"></label><br>
+    <button type="submit">Update Aircraft</button>
+  </form>
+  <a href="/admin/aircrafts">Back to Aircraft List</a>
+</body>
+</html>

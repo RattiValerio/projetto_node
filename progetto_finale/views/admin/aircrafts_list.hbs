@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin: Aircrafts List</title>
+</head>
+<body>
+  <h1>Aircrafts List</h1>
+  <a href="/admin/add-aircraft">Add New Aircraft</a>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Nickname</th>
+        <th>Price</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each aircrafts}}
+        <tr>
+          <td>{{this.name}}</td>
+          <td>{{this.nickname}}</td>
+          <td>{{this.price}}</td>
+          <td>
+            <a href="/admin/edit-aircraft/{{this._id}}">Edit</a>
+            <form action="/admin/delete-aircraft/{{this._id}}" method="POST" style="display:inline;">
+              <button type="submit">Delete</button>
+            </form>
+          </td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</body>
+</html>

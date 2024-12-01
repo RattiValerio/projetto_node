@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin: Add Aircraft</title>
+</head>
+<body>
+  <h1>Add New Aircraft</h1>
+  <form action="/admin/add-aircraft" method="POST">
+    <label>Name: <input type="text" name="name" required></label><br>
+    <label>Nickname: <input type="text" name="nickname" required></label><br>
+    <label>Speed: <input type="text" name="speed"></label><br>
+    <label>Max Altitude: <input type="text" name="max_altitude"></label><br>
+    <label>Engine Power: <input type="text" name="engine_power"></label><br>
+    <label>Wing Design: <input type="text" name="wing_design"></label><br>
+    <label>Payload: <input type="text" name="payload"></label><br>
+    <label>Price: <input type="number" name="price"></label><br>
+    <label>Armament (comma-separated): <input type="text" name="armament"></label><br>
+    <label>Defense Systems (comma-separated): <input type="text" name="defense_systems"></label><br>
+    <label>Crew: <input type="text" name="crew"></label><br>
+    <label>Fuel Capacity: <input type="text" name="fuel_capacity"></label><br>
+    <label>Carrier Capable: <input type="checkbox" name="carrier_capable"></label><br>
+    <label>Image Filename: <input type="text" name="image_filename"></label><br>
+    <button type="submit">Add Aircraft</button>
+  </form>
+</body>
+</html>

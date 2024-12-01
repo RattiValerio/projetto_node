@@ -1,0 +1,319 @@
+[{
+  "name": "F-22 Raptor",
+  "nickname": "Raptor",
+  "speed": "2,414 km/h",
+  "max_altitude": "20,000 m",
+  "engine_power": "35,000 lbf each (x2)",
+  "wing_design": "Delta-canard",
+  "payload": "10,000 kg",
+  "price": "150000000",
+  "armament": [
+    "M61A2 Vulcan cannon",
+    "AIM-120 AMRAAM missiles",
+    "GBU-32 JDAM bombs"
+  ],
+  "defense_systems": [
+    "Stealth technology",
+    "Chaff",
+    "Flares"
+  ],
+  "crew": 1,
+  "fuel_capacity": "18,000 liters",
+  "carrier_capable": false,
+  "radar": {
+    "type": "AN/APG-77",
+    "range": "200 km",
+    "frequency": "X-band",
+    "capabilities": [
+      "Stealth detection",
+      "Multi-target tracking"
+    ]
+  },
+  "image_filename": "f-22_raptor.jpg"
+},
+{
+  "name": "F-35 Lightning II",
+  "nickname": "Lightning",
+  "speed": "1,931 km/h",
+  "max_altitude": "15,000 m",
+  "engine_power": "43,000 lbf",
+  "wing_design": "Swept-back",
+  "payload": "8,200 kg",
+  "price": "78000000",
+  "armament": [
+    "GAU-22/A 25mm cannon",
+    "AIM-120 AMRAAM missiles",
+    "GBU-31 JDAM bombs"
+  ],
+  "defense_systems": [
+    "Stealth technology",
+    "Electronic warfare"
+  ],
+  "crew": 1,
+  "fuel_capacity": "8,382 liters",
+  "carrier_capable": true,
+  "radar": {
+    "type": "AN/APG-81",
+    "range": "150 km",
+    "frequency": "X-band",
+    "capabilities": [
+      "Electronic warfare",
+      "Ground mapping"
+    ]
+  },
+  "image_filename": "f-35_lightning_ii.jpg"
+},
+{
+  "name": "Eurofighter Typhoon",
+  "nickname": "Typhoon",
+  "speed": "2,495 km/h",
+  "max_altitude": "19,812 m",
+  "engine_power": "20,000 lbf each (x2)",
+  "wing_design": "Delta-canard",
+  "payload": "7,500 kg",
+  "price": "90000000",
+  "armament": [
+    "Mauser BK-27 cannon",
+    "AIM-120 AMRAAM missiles",
+    "Storm Shadow cruise missiles"
+  ],
+  "defense_systems": [
+    "DASS system",
+    "Electronic countermeasures"
+  ],
+  "crew": 1,
+  "fuel_capacity": "5,000 liters",
+  "carrier_capable": false,
+  "radar": {
+    "type": "Captor-E",
+    "range": "370 km",
+    "frequency": "X-band",
+    "capabilities": [
+      "Air-to-air superiority",
+      "Ground attack"
+    ]
+  },
+  "image_filename": "eurofighter_typhoon.jpeg"
+},
+{
+
+  "name": "Sukhoi Su-57",
+  "nickname": "Felon",
+  "speed": "2,130 km/h",
+  "max_altitude": "20,000 m",
+  "engine_power": "35,000 lbf each (x2)",
+  "wing_design": "Blended-wing-body",
+  "payload": "10,000 kg",
+  "price": "34000000",
+  "armament": [
+    "30mm cannon",
+    "R-77 missiles",
+    "Kh-35 anti-ship missiles"
+  ],
+  "defense_systems": [
+    "Stealth technology",
+    "Electronic warfare systems"
+  ],
+  "crew": 1,
+  "fuel_capacity": "10,300 liters",
+  "carrier_capable": false,
+  "radar": {
+    "type": "N036 Byelka",
+    "range": "400 km",
+    "frequency": "L-band and X-band",
+    "capabilities": [
+      "Stealth detection",
+      "Multi-role operations"
+    ]
+  },
+  "image_filename": "su-57_felon.jpg"
+},
+{
+
+  "name": "Dassault Rafale",
+  "nickname": "Rafale",
+  "speed": "2,223 km/h",
+  "max_altitude": "15,240 m",
+  "engine_power": "17,000 lbf each (x2)",
+  "wing_design": "Delta-canard",
+  "payload": "9,500 kg",
+  "price": "115000000",
+  "armament": [
+    "GIAT 30mm cannon",
+    "Meteor missiles",
+    "SCALP EG cruise missiles"
+  ],
+  "defense_systems": [
+    "SPECTRA electronic warfare suite"
+  ],
+  "crew": 2,
+  "fuel_capacity": "4,700 liters",
+  "carrier_capable": true,
+  "radar": {
+    "type": "RBE2-AA",
+    "range": "200 km",
+    "frequency": "X-band",
+    "capabilities": [
+      "Multi-role operations",
+      "Electronic warfare"
+    ]
+  },
+  "image_filename": "dassault_rafale.jpg"
+},
+{
+  "name": "Mikoyan MiG-29",
+  "nickname": "Fulcrum",
+  "speed": "2,400 km/h",
+  "max_altitude": "18,013 m",
+  "engine_power": "18,300 lbf each (x2)",
+  "wing_design": "Swept-back",
+  "payload": "4,500 kg",
+  "price": "11000000",
+  "armament": [
+    "30mm GSh-30-1 cannon",
+    "R-73 missiles",
+    "Kh-31 anti-ship missiles"
+  ],
+  "defense_systems": [
+    "Electronic countermeasures",
+    "Infrared search and track (IRST)"
+  ],
+  "crew": 1,
+  "fuel_capacity": "4,300 liters",
+  "carrier_capable": false,
+  "radar": {
+    "type": "N019 Rubin",
+    "range": "100 km",
+    "frequency": "X-band",
+    "capabilities": [
+      "Dogfighting",
+      "Ground support"
+    ]
+  },
+  "image_filename": "mig-29_fulcrum.jpg"
+},
+{
+  "name": "Boeing F-15E Strike Eagle",
+  "nickname": "Strike Eagle",
+  "speed": "2,655 km/h",
+  "max_altitude": "18,288 m",
+  "engine_power": "29,000 lbf each (x2)",
+  "wing_design": "Swept-back",
+  "payload": "10,400 kg",
+  "price": "31000000",
+  "armament": [
+    "M61 Vulcan cannon",
+    "AIM-120 AMRAAM missiles",
+    "GBU-28 bunker buster bombs"
+  ],
+  "defense_systems": [
+    "Electronic warfare pods",
+    "Chaff",
+    "Flares"
+  ],
+  "crew": 2,
+  "fuel_capacity": "6,103 liters",
+  "carrier_capable": false,
+  "radar": {
+    "type": "APG-70",
+    "range": "280 km",
+    "frequency": "X-band",
+    "capabilities": [
+      "Ground strike",
+      "Air superiority"
+    ]
+  },
+  "image_filename": "f-15e_strike_eagle.jpg"
+},
+{
+  "name": "Lockheed SR-71 Blackbird",
+  "nickname": "Blackbird",
+  "speed": "3,529 km/h",
+  "max_altitude": "25,900 m",
+  "engine_power": "34,000 lbf each (x2)",
+  "wing_design": "Delta",
+  "payload": "Reconnaissance equipment",
+  "price": "33000000",
+  "armament": [],
+  "defense_systems": [
+    "Electronic countermeasures",
+    "Stealth design"
+  ],
+  "crew": 2,
+  "fuel_capacity": "45,000 liters",
+  "carrier_capable": false,
+  "radar": {
+    "type": "Defensive Systems Suite",
+    "range": "N/A",
+    "frequency": "Multiple",
+    "capabilities": [
+      "Electronic countermeasures"
+    ]
+  },
+  "image_filename": "sr-71_blackbird.jpg"
+},
+{
+  "name": "McDonnell Douglas F/A-18 Hornet",
+  "nickname": "Hornet",
+  "speed": "1,915 km/h",
+  "max_altitude": "15,000 m",
+  "engine_power": "17,700 lbf each (x2)",
+  "wing_design": "Swept-back",
+  "payload": "7,250 kg",
+  "price": "70000000",
+  "armament": [
+    "M61 Vulcan cannon",
+    "AIM-9 Sidewinder missiles",
+    "AGM-84 Harpoon anti-ship missiles"
+  ],
+  "defense_systems": [
+    "Electronic warfare suite",
+    "Flares",
+    "Chaff"
+  ],
+  "crew": 1,
+  "fuel_capacity": "4,900 liters",
+  "carrier_capable": true,
+  "radar": {
+    "type": "AN/APG-73",
+    "range": "160 km",
+    "frequency": "X-band",
+    "capabilities": [
+      "Carrier operations",
+      "Multi-role fighter"
+    ]
+  },
+  "image_filename": "fa-18_hornet.jpg"
+},
+{
+  "name": "Chengdu J-20",
+  "nickname": "Mighty Dragon",
+  "speed": "2,470 km/h",
+  "max_altitude": "20,000 m",
+  "engine_power": "35,000 lbf each (x2)",
+  "wing_design": "Blended-wing-body",
+  "payload": "11,000 kg",
+  "price": "110000000",
+  "armament": [
+    "PL-15 long-range missiles",
+    "PL-10 short-range missiles",
+    "GBU-20 guided bombs"
+  ],
+  "defense_systems": [
+    "Stealth technology",
+    "Electronic warfare suite"
+  ],
+  "crew": 1,
+  "fuel_capacity": "11,340 liters",
+  "carrier_capable": false,
+  "radar": {
+    "type": "Type 1475",
+    "range": "300 km",
+    "frequency": "X-band",
+    "capabilities": [
+      "Stealth detection",
+      "Long-range targeting"
+    ]
+  },
+  "image_filename": "j-20_mighty_dragon.jpg"
+}]

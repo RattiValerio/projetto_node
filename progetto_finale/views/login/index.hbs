@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="css/login_style.css" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+    <h2>Login</h2>
+    <form action="/login" method="post">
+        <!-- <input type="hidden" name="csrf_token" value="{{ csrf_token }}"> -->
+        <div class="input-box">
+            <input type="username" name="username" placeholder="Username"  {{#if credentials}}value="{{ credentials.username }}"{{/if}}>
+        </div>
+
+        {{#if error}}
+            {{#if error.username}}
+                <p class="error-text">username not valid<p>
+            {{/if}}
+        {{/if}}
+        <div class="input-box">
+            <input type="password" name="password" placeholder="Password" >
+        </div>
+        {{#if error}}
+            {{#if error.password}}
+                <p class="error-text">password not valid<p>
+            {{/if}}
+        {{/if}}
+        {{#if error}}
+            {{#if error.login}}
+                <p class="error-text">Wrong credentials<p></p>
+            {{/if}}
+        {{/if}}
+
+        <div class="input-box button">
+            <input type="Submit" value="Login">
+        </div>
+        <div class="text">
+            <h3>Not a member? <a href="/register">Signup now</a></h3>
+            <h3>Or continue as a <a href="/guest">guest</a></h3>
+        </div>
+    </form>
+<!--
+    {{#if error}}
+        <p style="color: red">Error:<br>
+            {{#if error.email}}
+                email not valid<br>
+            {{/if}}
+            {{#if error.password}}
+                Password not valid<br>
+            {{/if}}
+            {{#if error.login}}
+                Wrong credentials
+            {{/if}}
+        </p>
+    {{/if}}
+-->
+    {{#if success}}
+        <p style="color: green">Success: profile created successfully</p>
+    {{/if}}
+
+</div>
+</body>
+</html>

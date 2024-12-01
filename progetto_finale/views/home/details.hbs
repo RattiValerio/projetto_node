@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{aircraft.name}} Details</title>
+  <link rel="stylesheet" href="../css/aircrafts_style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Aircraft Shop</h1>
+      <nav class="nav">
+        <a href="/aircrafts" class="nav-link">Back to Shop</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="details-container">
+    <h2>{{aircraft.name}} ({{aircraft.nickname}})</h2>
+    <img src="/images/aircrafts/{{aircraft.image_filename}}" alt="{{aircraft.name}}">
+    
+    <ul class="details-list">
+      <li><strong>Speed:</strong> {{aircraft.speed}}</li>
+      <li><strong>Max Altitude:</strong> {{aircraft.max_altitude}}</li>
+      <li><strong>Engine Power:</strong> {{aircraft.engine_power}}</li>
+      <li><strong>Wing Design:</strong> {{aircraft.wing_design}}</li>
+      <li><strong>Payload:</strong> {{aircraft.payload}}</li>
+      <li><strong>Price:</strong> ${{aircraft.price}}</li>
+      <li><strong>Armament:</strong> 
+        <ul>
+          {{#each aircraft.armament}}
+            <li>{{this}}</li>
+          {{/each}}
+        </ul>
+      </li>
+      <li><strong>Defense Systems:</strong> 
+        <ul>
+          {{#each aircraft.defense_systems}}
+            <li>{{this}}</li>
+          {{/each}}
+        </ul>
+      </li>
+      <li><strong>Crew:</strong> {{aircraft.crew}}</li>
+      <li><strong>Fuel Capacity:</strong> {{aircraft.fuel_capacity}}</li>
+      <li><strong>Carrier Capable:</strong> {{#if aircraft.carrier_capable}}Yes{{else}}No{{/if}}</li>
+      <li><strong>Radar:</strong>
+        <ul>
+          <li><strong>Type:</strong> {{aircraft.radar.type}}</li>
+          <li><strong>Range:</strong> {{aircraft.radar.range}}</li>
+          <li><strong>Frequency:</strong> {{aircraft.radar.frequency}}</li>
+          <li><strong>Capabilities:</strong>
+            <ul>
+              {{#each aircraft.radar.capabilities}}
+                <li>{{this}}</li>
+              {{/each}}
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <form action="/hangar/add/" method="POST" style="display:inline;">
+      <input type="hidden" name="name" value="{{aircraft.name}}">
+      <input type="hidden" name="price" value="{{aircraft.price}}">
+      <button type="submit" class="btn">Add to hangar</button>
+    </form>
+    <a href="/aircrafts" class="btn">Back to Shop</a>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Aircraft Shop. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
